@@ -1,3 +1,9 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+$img-dark-filters: unquote("hue-rotate(180deg)\ invert()");
+
+[saved-theme="dark"] img[alt*="structure"] {
+
+	filter: #{$img-dark-filters};
+}
