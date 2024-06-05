@@ -15,7 +15,7 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <hr />
 		<p>
-			Kyle Broaders {year}, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>. Built using <a href="https://quartz.jzhao.xyz/">Quartz</a>.
+			Kyle Broaders {year}, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>. Built using <a href="https://quartz.jzhao.xyz/">Quartz</a> and <a href="https://obsidian.md/">Obsidian</a>.
 		</p>
         <ul>
           {Object.entries(links).map(([text, link]) => (
