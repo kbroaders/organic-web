@@ -13,3 +13,7 @@ Here is a test structure. It should invert in dark mode:
 Here is a photo. It shouldn’t invert.
 
 ![[640px-Cat_August_2010-4.jpg]]
+
+Here’s an svg:
+![[Asset 1.svg|structure colors test]]
+
