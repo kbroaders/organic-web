@@ -156,10 +156,10 @@ a {
       flex-direction: column;
       gap: 2rem;
       top: 0;
+      padding:0 2rem;
       width: $sidePanelWidth;
       margin-top: $topSpacing;
       box-sizing: border-box;
-      padding: 0 4rem;
       position: fixed;
       @media all and (max-width: $fullPageWidth) {
         position: initial;

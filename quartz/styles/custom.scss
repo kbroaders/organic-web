@@ -7,3 +7,21 @@ $img-dark-filters: unquote("invert()\ hue-rotate(185deg)\ brightness(0.7)\ satur
 
 	filter: #{$img-dark-filters};
 }
+
+:root {
+
+	--min-fs: 1;
+	--max-fs: 1.2;
+	--min-vw: 40;
+	--max-vw: 80;
+  
+	--min-fs-px: var(--min-fs) * 16px;
+	--max-fs-px: var(--max-fs) * 16px;
+	--min-vw-rem: var(--min-vw) * 1rem;
+  
+	--slope: (var(--max-fs) - var(--min-fs)) / (var(--max-vw) - var(--min-vw));
+	--yint: var(--min-fs-px) - ((var(--min-vw-rem)) * var(--slope));
+	--pref-fs: var(--yint) + (100vw * var(--slope));
+  
+	font-size: clamp(var(--min-fs-px), var(--pref-fs), var(--max-fs-px));
+  }

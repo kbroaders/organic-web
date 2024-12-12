@@ -1,0 +1,16 @@
+.logo {
+    margin: 0 1rem 0 0;
+    &:hover {
+      filter: brightness(130%) saturate(70%);
+      -webkit-transition: 0.2s -webkit-filter linear;
+      -moz-transition: 0.2s -moz-filter linear;
+      -moz-transition: 0.2s filter linear;
+      -ms-transition: 0.2s -ms-filter linear;
+      -o-transition: 0.2s -o-filter linear;
+      transition: 0.2s filter linear, 0.2s -webkit-filter linear; 
+    }
+  }
+  .logo img{
+    margin: 0 0 0 1rem;
+    width: 8rem;
+  }

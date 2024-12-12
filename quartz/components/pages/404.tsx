@@ -1,4 +1,5 @@
 import { i18n } from "../../i18n"
+import style from "../styles/404.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
 const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
@@ -14,5 +15,7 @@ const NotFound: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
     </article>
   )
 }
+
+NotFound.css = style
 
 export default (() => NotFound) satisfies QuartzComponentConstructor
